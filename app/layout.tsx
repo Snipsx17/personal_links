@@ -37,7 +37,9 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
         >
-          <main>{children}</main>
+          <main className="bg-white-background w-full h-screen">
+            {children}
+          </main>
           <Toaster />
         </body>
       </html>
