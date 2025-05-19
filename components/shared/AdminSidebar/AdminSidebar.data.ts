@@ -1,25 +1,37 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
+import {
+  AlignVerticalSpaceAround,
+  CalendarRange,
+  ChartNoAxesColumnIncreasing,
+  Eclipse,
+  Settings,
+  Store,
+} from "lucide-react";
 
 export const items = [
   {
-    title: "Home",
+    title: "Links",
     url: "#",
-    icon: Home,
+    icon: AlignVerticalSpaceAround,
   },
   {
-    title: "Inbox",
+    title: "Shop",
     url: "#",
-    icon: Inbox,
+    icon: Store,
   },
   {
-    title: "Calendar",
+    title: "Appearance",
     url: "#",
-    icon: Calendar,
+    icon: Eclipse,
   },
   {
-    title: "Search",
+    title: "Social Planner",
     url: "#",
-    icon: Search,
+    icon: CalendarRange,
+  },
+  {
+    title: "Analytics",
+    url: "#",
+    icon: ChartNoAxesColumnIncreasing,
   },
   {
     title: "Settings",
