@@ -6,12 +6,12 @@ export default function HomeLayout({ children }: { children: ReactNode }) {
   return (
     <SidebarProvider>
       <AdminSidebar />
-      <main>
+      <div className="w-full">
         <div>
           <SidebarTrigger />
         </div>
         {children}
-      </main>
+      </div>
     </SidebarProvider>
   );
 }
