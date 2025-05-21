@@ -10,7 +10,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ message: "Unauthorize" }, { status: 401 });
     }
 
-    let existingUser = prisma.user.findFirst({
+    let existingUser = await prisma.user.findFirst({
       where: { id: userId },
       include: {
         links: true,
@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
     });
 
     if (!existingUser) {
-      existingUser = prisma.user.create({
+      existingUser = await prisma.user.create({
         data: {
           id: userId,
           name: "user",
